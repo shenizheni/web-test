@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 20px;
+    height: 400px;
+    background-color: black;
+    background-image: url("images/city.jpg");
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+header .logo a{
+    background-image: url("images/building.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -30px;
+    width: 300px;
+    height: 80px;
+    text-indent: -99999px;
+    display: inline-block
+}
+header .mobile{
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*responsive rules*/
+@media screen and (max-width: 735px) {
+    header {
+        height: 250px;
+        background-position: 0 30px;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+} 
+
+.feature{
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.feature figure{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.feature figure img{
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: gray 0 0 10px;
+}
+
+footer {
+    background: black;
+    font-size: 12px;
+    padding: 20px 20px;
+    color: gray;
+    text-align: center;
+}
+
